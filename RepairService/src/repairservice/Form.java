@@ -29,11 +29,16 @@ public class Form extends Main {
     
     // Form Biodata
     public void Biodata() {
+        System.out.println("==================================================================================");
+        System.out.println("|                               Selamat Datang                                   |");
+        System.out.println("|                     Ditempat perbaikan - Repair Service                        |");
+        System.out.println("==================================================================================");
+        
         // Nama
         while(true) {
             System.out.print("Masukkan nama : ");
             nama = key.nextLine();
-            // Cek apakah nama berisi angka
+            // Cek apakah nama berisi huruf apa tidak
             if(nama.matches("[a-zA-Z\\s]+")) {
                 // Masukkan nama kedalam Array Bio
                 bio.add(nama);
@@ -95,6 +100,7 @@ public class Form extends Main {
     }
     
     public void FormPerbaikan() throws Exception {
+        System.out.println("----------------------------------------------------------------------------------");
         boolean form = true;
         while(form) {
             System.out.print("Nama Perangkat : ");
@@ -104,11 +110,13 @@ public class Form extends Main {
             
             boolean ulang = true;
             while(ulang) {
+                System.out.println("----------------------------------------------------------------------------------");
                 System.out.println("Pilih Jenis Perangkat yang ingin diservice :");
                 for(int j = 0; j < jenis.length; j++) {
+                    // %s = String (Menampilkan value dari array jenis), %d = Angka (Menampilkan index tiap value), \n = Membuat baris baru
                     System.out.printf("Masukkan %d untuk %s\n", j + 1, jenis[j]);
                 }
-                System.out.println("---------------------------------------------");
+                System.out.println("----------------------------------------------------------------------------------");
 
                 boolean pilihPerangkat = false;
                 while(!pilihPerangkat) {
@@ -145,6 +153,7 @@ public class Form extends Main {
 
                 boolean checkulang = true;
                 while(checkulang) {
+                    System.out.println("----------------------------------------------------------------------------------");
                     System.out.print("Apakah anda ingin melakukan perbaikan yang lain? (Y / N) : ");
                     
                     ULANG:
@@ -169,6 +178,7 @@ public class Form extends Main {
                                 break ULANG;
                             default:
                                 System.out.println("Pilih sesuai pilihan yang ada.");
+                                System.out.println("----------------------------------------------------------------------------------");
                                 System.out.print("Apakah anda ingin melakukan perbaikan yang lain? (Y / N) : ");
                                 break;
                         }
@@ -187,8 +197,10 @@ public class Form extends Main {
             // Konfirmasi pesanan
             LAST:
             while(true) {
+                System.out.println("----------------------------------------------------------------------------------");
                 System.out.print("Apakah anda ingin melakukan perbaikan untuk perangkat yang berbeda? (Y / N) : ");
                 pesanLain = key.next();
+                System.out.println("----------------------------------------------------------------------------------");
                 switch (pesanLain) {
                     case "N": 
                     case "n":

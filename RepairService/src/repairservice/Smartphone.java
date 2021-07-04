@@ -43,73 +43,73 @@ public class Smartphone extends Main {
     
     public void PortHeadsetRusak() {
         harga = 230000;
-        nama = serviceHp[5];
+        nama = serviceHp[6];
         cs.checkPerbaikan(nama, harga);
     }
     
     public void TombolPowerRusak() {
         harga = 50000;
-        nama = serviceHp[6];
+        nama = serviceHp[7];
         cs.checkPerbaikan(nama, harga);
     }
     
     public void KonektorBateraiRusak() {
         harga = 70000;
-        nama = serviceHp[7];
+        nama = serviceHp[8];
         cs.checkPerbaikan(nama, harga);
     }
     
     public void EmmcRusak() {
         harga = 500000;
-        nama = serviceHp[8];
+        nama = serviceHp[9];
         cs.checkPerbaikan(nama, harga);
     }
     
     public void BateraiBermasalah() {
         harga = 160000;
-        nama = serviceHp[9];
+        nama = serviceHp[10];
         cs.checkPerbaikan(nama, harga);
     }
     
     public void LupaPola() {
         harga = 100000;
-        nama = serviceHp[10];
+        nama = serviceHp[11];
         cs.checkPerbaikan(nama, harga);
     }
     
-    public void ResetHp() {
+    public void ResetHP() {
         harga = 50000;
-        nama = serviceHp[11];
+        nama = serviceHp[12];
         cs.checkPerbaikan(nama, harga);
     }
     
     public void Bootloop() {
         harga = 80000;
-        nama = serviceHp[12];
+        nama = serviceHp[13];
         cs.checkPerbaikan(nama, harga);
     }
     
     public void HpKonslet() {
         harga = 450000;
-        nama = serviceHp[13];
+        nama = serviceHp[14];
         cs.checkPerbaikan(nama, harga);
     }
     
     public void HpMatiTotal() {
         harga = 150000;
-        nama = serviceHp[14];
+        nama = serviceHp[15];
         cs.checkPerbaikan(nama, harga);
     }
     
     public void FlashHP() {
         harga = 200000;
-        nama = serviceHp[15];
+        nama = serviceHp[16];
         cs.checkPerbaikan(nama, harga);
     }
     
     public void IMEIHilang() {
         harga = 70000;
-        nama = serviceHp[16];
+        nama = serviceHp[17];
         cs.checkPerbaikan(nama, harga);
     }
 }

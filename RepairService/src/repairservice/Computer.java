@@ -19,16 +19,16 @@ public class Computer extends Main {
         win.put(windows[3], 25000);
         win.put(windows[4], 20000);
         
-        System.out.println("=================================");
-        System.out.println("|         Install Ulang         |");
-        System.out.println("=================================");
-        System.out.println("|    Pilih OS yang diinginkan   |");
-        System.out.println("=================================");
+        System.out.println("==================================================================================");
+        System.out.println("|                                Install Ulang                                   |");
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("|                           Pilih OS yang diinginkan                             |");
+        System.out.println("==================================================================================");
         for(int w = 0; w < windows.length; w++) {
             System.out.printf("%d. %s\n", w + 1, windows[w]);
         }
         
-        System.out.println("=================================");
+        System.out.println("==================================================================================");
         while(true) {
             try {
                 System.out.print("Masukkan angka: ");
@@ -42,14 +42,14 @@ public class Computer extends Main {
                 harga = win.get(windows[num]);
                 break;
             } catch(InputMismatchException eios) {
-                System.out.println("=================================");
-                System.out.println("|   Input harus berupa angka !  |");
-                System.out.println("=================================");
+                System.out.println("==================================================================================");
+                System.out.println("|                           Input harus berupa angka !                           |");
+                System.out.println("==================================================================================");
                 key.next();
             } catch(Exception eitos) {
-                System.out.println("=================================");
-                System.out.println("| Pilih sesuai pilihan yang ada |");
-                System.out.println("=================================");
+                System.out.println("==================================================================================");
+                System.out.println("|                         Pilih sesuai pilihan yang ada                          |");
+                System.out.println("==================================================================================");
             }
         }
         
